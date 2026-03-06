@@ -2,10 +2,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+.heroSectionBackground {
     background-color: var(--color-background);
+    position: relative;
+    z-index: 3;
+}
+
+/* ----------------------------header/navbar------------------------- */
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -58,4 +65,133 @@ nav {
     border-radius: 16px;
     width: 38px;
     height: 32px;
+}
+
+/* ----------------------------heroSection------------------------- */
+
+.heroSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+
+.ownNameHeader {
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    gap: 35px;
+    padding: 16px 8px;
+}
+
+.ownNameHeader .iam {
+    transform: rotate(270deg);
+    font-size: 90px;
+    display: flex;
+    text-align: start;
+    align-items: flex-end;
+    padding: 16px 8px;
+}
+
+.nameAndJob {
+    padding: 16px 8px;
+}
+
+.ownNameHeader div p:nth-child(1) {
+    font-size: 128px;
+    font-weight: bold;
+}
+
+.ownNameHeader div p:nth-child(2) {
+    color: var(--color-primary2);
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.referenceIconsScrollDownContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+}
+
+.letsTalkButtonDiv {
+    background-color: var(--color-primary1);
+    color: #FFFFFF;
+    padding: 8px 16px;
+    font-size: 23px;
+    font-weight: 400;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.letsTalkButtonDiv p {
+    padding: 8px 16px;
+}
+
+.refernceIconDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 42px;
+}
+
+.refernceIconDiv img {
+    width: 30px;
+    height: 30px;
+}
+
+.lineOne {
+    background-color: var(--color-primary1);
+    height: 4px;
+    width: 100px;
+}
+
+.scrollDownContainer {
+    color: #FFFFFF;
+    transform: rotate(90deg);
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    position: absolute;
+    right: 5%;
+    bottom: 100%;
+}
+
+.scrollDownContainer p {
+    display: flex;
+    justify-content: center;
+    padding: 16px 8px;
+    font-size: 23px;
+}
+
+.scrollDownContainer img {
+    display: flex;
+    justify-content: center;
+    transform: rotate(270deg);
+    padding: 16px 8px;
+}
+
+.purpleShadowHeroSection {
+    position: absolute;
+    left: -10%;
+    top: 20%;
+    filter: blur(40px);
+}
+
+.greenShadowHeroSection {
+    position: absolute;
+    right: -20%;
+    top: 20%;
+    filter: blur(30px);
+}
+
+/* ----------------------------aboutSection------------------------- */
+
+.aboutSectionBackground {
+    background-color: var(--color-background);
+    height: 100px;
 }
