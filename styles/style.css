@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.heroSectionBackground {
+.sectionBackground {
     background-color: var(--color-background);
     position: relative;
     z-index: 3;
@@ -156,42 +156,117 @@ nav {
     display: flex;
     white-space: nowrap;
     justify-content: center;
+    align-items: center;
     position: absolute;
     right: 5%;
-    bottom: 100%;
+    bottom: 55px;
 }
 
 .scrollDownContainer p {
     display: flex;
     justify-content: center;
-    padding: 16px 8px;
     font-size: 23px;
+    margin: 16px 8px;
 }
 
 .scrollDownContainer img {
     display: flex;
     justify-content: center;
     transform: rotate(270deg);
-    padding: 16px 8px;
+    margin: 16px 8px;
+    width: 16px;
+    height: 16px;
 }
 
 .purpleShadowHeroSection {
     position: absolute;
-    left: -10%;
-    top: 20%;
+    left: -300px;
+    top: 180px;
     filter: blur(40px);
 }
 
 .greenShadowHeroSection {
     position: absolute;
-    right: -20%;
-    top: 20%;
+    right: -450px;
+    top: 120px;
+    transform: rotate(10deg);
     filter: blur(30px);
 }
 
 /* ----------------------------aboutSection------------------------- */
 
-.aboutSectionBackground {
+.nextSectionDummy {
     background-color: var(--color-background);
     height: 100px;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    color: #FFFFFF;
+    gap: 100px;
+}
+
+.aboutMeTextIconContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.aboutMeTextIconContainer h2 {
+    font-size: 92px;
+    font-weight: 700 bold;
+    margin-bottom: 25px;
+}
+
+.aboutMeTextIconContainer p {
+   font-size: 16px;
+}
+
+.aboutMeTextIconContainer p:nth-child(1) {
+   margin-bottom: 10px;
+}
+
+.aboutTextDiv {
+    display: flex;
+    flex-direction: column;
+    width: 471px;
+    gap: 35px;
+}
+
+.aboutImgTextDivs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.aboutImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+}
+
+.aboutImgContainer img{
+    width: 30px;
+}
+
+.aboutImgTextDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.aboutMeImgDiv {
+    position: relative;
+    z-index: 5;
+}
+
+.backgroundColorShadowAboutSection {
+    position: absolute;
+    right: -150px;
+    z-index: -1;
 }
