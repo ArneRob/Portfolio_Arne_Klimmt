@@ -5,18 +5,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sectionBackground {
-    background-color: var(--color-background);
-    position: relative;
-    z-index: 3;
-}
-
 /* ----------------------------header/navbar------------------------- */
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 16px 8px;
+    background-color: var(--color-background);
 }
 
 .nameLogo {
@@ -74,8 +69,11 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 100px;
     height: 100vh;
+    background-color: var(--color-background);
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
 }
 
 .ownNameHeader {
@@ -147,7 +145,7 @@ nav {
 .lineOne {
     background-color: var(--color-primary1);
     height: 4px;
-    width: 100px;
+    width: 200px;
 }
 
 .scrollDownContainer {
@@ -196,8 +194,9 @@ nav {
 /* ----------------------------aboutSection------------------------- */
 
 .nextSectionDummy {
-    background-color: var(--color-background);
+    background-color: var(--color-background2);
     height: 100px;
+    z-index: 5 !important;
 }
 
 .aboutSection {
@@ -207,6 +206,9 @@ nav {
     align-items: end;
     color: #FFFFFF;
     gap: 100px;
+    background-color: var(--color-background);
+    position: relative;
+    z-index: 3;
 }
 
 .aboutMeTextIconContainer {
@@ -222,11 +224,11 @@ nav {
 }
 
 .aboutMeTextIconContainer p {
-   font-size: 16px;
+    font-size: 16px;
 }
 
 .aboutMeTextIconContainer p:nth-child(1) {
-   margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .aboutTextDiv {
@@ -242,7 +244,7 @@ nav {
     gap: 24px;
 }
 
-.aboutImgContainer{
+.aboutImgContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,7 +252,7 @@ nav {
     height: 48px;
 }
 
-.aboutImgContainer img{
+.aboutImgContainer img {
     width: 30px;
 }
 
@@ -262,11 +264,72 @@ nav {
 
 .aboutMeImgDiv {
     position: relative;
-    z-index: 5;
+    top: 150px;
+    z-index: 0;
 }
 
 .backgroundColorShadowAboutSection {
-    position: absolute;
-    right: -150px;
     z-index: -1;
+}
+
+.waveAndCharacterImg {
+    position: absolute;
+    width: 100%;
+}
+
+.aboutCharacterImg {
+    position: relative;
+    z-index: 1;
+}
+
+.curvedSectionEnding {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+
+    background: #0f172a;
+
+    z-index: 2;
+}
+
+/* ----------------------------skillsSection------------------------- */
+
+.skillsSection {
+    overflow: hidden;
+    background-color: var(--color-background2);
+    position: absolute;
+    bottom: -120%;
+    height: 1000px;
+    z-index: 4 !important;
+    width: 100%;
+}
+
+.iconsSkillSection {
+    position: relative;
+    z-index: 50 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.iconsDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.skillIconTextDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFFFFF;
+}
+
+.skillIcon {
+    width: 60px;
+    height: 60px;
 }
