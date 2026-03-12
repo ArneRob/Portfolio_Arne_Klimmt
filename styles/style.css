@@ -279,18 +279,15 @@ nav {
 
 .aboutCharacterImg {
     position: relative;
+    left: 50%;
     z-index: 1;
 }
 
 .curvedSectionEnding {
     position: absolute;
-    bottom: 0;
+    bottom: -976px;
     left: 0;
     width: 100%;
-    height: 200px;
-
-    background: #0f172a;
-
     z-index: 2;
 }
 
@@ -302,7 +299,7 @@ nav {
     position: absolute;
     bottom: -120%;
     height: 1000px;
-    z-index: 4 !important;
+    z-index: 1;
     width: 100%;
 }
 
