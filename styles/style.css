@@ -201,9 +201,9 @@ nav {
 
 .aboutSection {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     color: #FFFFFF;
     gap: 100px;
     background-color: var(--color-background);
@@ -211,9 +211,16 @@ nav {
     z-index: 3;
 }
 
+.aboutMeTextAndImgDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+}
+
 .aboutMeTextIconContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
@@ -263,49 +270,42 @@ nav {
 }
 
 .aboutMeImgDiv {
-    position: relative;
-    top: 150px;
     z-index: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .backgroundColorShadowAboutSection {
     z-index: -1;
-}
-
-.waveAndCharacterImg {
     position: absolute;
-    width: 100%;
 }
 
 .aboutCharacterImg {
-    position: relative;
-    left: 50%;
     z-index: 1;
 }
 
 .curvedSectionEnding {
-    position: absolute;
-    bottom: -976px;
-    left: 0;
     width: 100%;
     z-index: 2;
+    position: absolute;
+    bottom: -690px;
 }
 
 /* ----------------------------skillsSection------------------------- */
 
 .skillsSection {
+    position: relative;
+    background: linear-gradient(.25turn, #192742, 10%, #1d283c);
     overflow: hidden;
-    background-color: var(--color-background2);
-    position: absolute;
-    bottom: -120%;
     height: 1000px;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
+    display: flex;
+    gap: 100px;
+    padding: 100px 0px 100px 100px;
 }
 
 .iconsSkillSection {
-    position: relative;
-    z-index: 50 !important;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -329,4 +329,8 @@ nav {
 .skillIcon {
     width: 60px;
     height: 60px;
+}
+
+.skillSecTextContainer {
+    color: #FFFFFF;
 }
